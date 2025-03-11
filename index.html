@@ -193,11 +193,25 @@
             background: linear-gradient(180deg, var(--background-primary) 0%, var(--background-secondary) 100%);
         }
         
+        .gif-container {
+            max-width: 100%;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+        }
+        
         .mockup-img {
             max-width: 100%;
             height: auto;
-            border-radius: 12px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            display: block;
+            -webkit-transform: translateZ(0);
+            -moz-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            -o-transform: translateZ(0);
+            transform: translateZ(0);
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: optimizeQuality;
         }
         
         .pricing {
@@ -319,7 +333,9 @@
     <section class="mockup-section">
         <div class="container">
             <h2 class="section-title">See it in Action</h2>
-            <img src="src/example.gif" alt="CharmBar in action" class="mockup-img">
+            <div class="gif-container">
+                <img src="src/example.gif" alt="CharmBar in action" class="mockup-img">
+            </div>
         </div>
     </section>
     

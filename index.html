@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CharmBar - The Most Advanced Dock Customization App</title>
-    <link rel="icon" href="src/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
         :root {
             --text-primary: #1d1d1f;
@@ -166,8 +166,29 @@
             margin-bottom: 12px;
         }
         
+        .design-highlight {
+            padding: 100px 0 50px 0;
+            text-align: center;
+            background-color: var(--background-primary);
+        }
+        
+        .design-showcase {
+            margin: 0 auto;
+            max-width: 100%;
+            overflow: hidden;
+        }
+        
+        .design-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            display: block;
+            margin: 0 auto;
+        }
+        
         .mockup-section {
-            padding: 100px 0;
+            padding: 50px 0 100px 0;
             text-align: center;
             background: linear-gradient(180deg, var(--background-primary) 0%, var(--background-secondary) 100%);
         }
@@ -286,12 +307,19 @@
         </div>
     </section>
     
+    <section class="design-highlight">
+        <div class="container">
+            <h2 class="section-title">Beautiful Dock Customization</h2>
+            <div class="design-showcase">
+                <img src="src/example_img.png" alt="Dock overlay design" class="design-img">
+            </div>
+        </div>
+    </section>
+
     <section class="mockup-section">
         <div class="container">
-            <video controls autoplay muted loop class="mockup-img">
-                <source src="src/example.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <h2 class="section-title">See it in Action</h2>
+            <img src="src/example.gif" alt="CharmBar in action" class="mockup-img">
         </div>
     </section>
     

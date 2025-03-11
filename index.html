@@ -193,25 +193,21 @@
             background: linear-gradient(180deg, var(--background-primary) 0%, var(--background-secondary) 100%);
         }
         
-        .gif-container {
-            max-width: 100%;
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        .video-container {
+            max-width: 800px;
+            width: 100%;
             margin: 0 auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            background-color: var(--background-primary);
         }
         
-        .mockup-img {
-            max-width: 100%;
+        .mockup-video {
+            width: 100%;
             height: auto;
             display: block;
-            -webkit-transform: translateZ(0);
-            -moz-transform: translateZ(0);
-            -ms-transform: translateZ(0);
-            -o-transform: translateZ(0);
-            transform: translateZ(0);
-            image-rendering: -webkit-optimize-contrast;
-            image-rendering: optimizeQuality;
+            object-fit: contain;
         }
         
         .pricing {
@@ -333,8 +329,11 @@
     <section class="mockup-section">
         <div class="container">
             <h2 class="section-title">See it in Action</h2>
-            <div class="gif-container">
-                <img src="src/example.gif" alt="CharmBar in action" class="mockup-img">
+            <div class="video-container">
+                <video autoplay muted loop playsinline class="mockup-video">
+                    <source src="src/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     </section>

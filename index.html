@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CharmBar - The Most Advanced Dock Customization App</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>CharmBar - Mac Dock Icon Customization App | Personalize Your macOS Dock</title>
+    <meta name="description" content="CharmBar lets you customize Mac app icons in your dock with emojis, PNGs, or JPGs. One-time payment, no subscriptions. Give your macOS dock personality.">
+    <meta name="keywords" content="mac dock customization, customize mac app icons, macOS dock personalization, mac icon changer, dock icons, CharmBar app">
+    <meta name="author" content="Creator of DockDoor">
+    <meta property="og:title" content="CharmBar - Mac Dock Icon Customization App">
+    <meta property="og:description" content="Personalize your macOS dock with custom app icons. Add emojis, PNGs, or JPGs to your favorite Mac apps.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://charmbar.org">
+    <meta property="og:image" content="src/icon.png">
+    <link rel="canonical" href="https://charmbar.org">
+    <link rel="icon" href="src/favicon.ico" type="image/x-icon">
     <style>
         :root {
             --text-primary: #1d1d1f;
@@ -86,6 +95,7 @@
             margin-bottom: 24px;
             border-radius: 22px;
             box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+            alt: "CharmBar Mac Dock Customization App Icon"
         }
         
         .title {
@@ -273,6 +283,20 @@
             font-style: normal;
         }
         
+        .footer-links {
+            margin-top: 16px;
+        }
+        
+        .footer-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
         /* Media Queries */
         @media (max-width: 768px) {
             .title {
@@ -296,6 +320,28 @@
             }
         }
     </style>
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "CharmBar",
+      "operatingSystem": "macOS",
+      "applicationCategory": "UtilitiesApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "5.00",
+        "priceCurrency": "USD"
+      },
+      "description": "CharmBar is a macOS dock customization app that lets you decorate app icons with emojis, PNGs, or JPGs. Personalize your Mac experience with custom dock icons.",
+      "screenshot": "src/example_img.png",
+      "softwareVersion": "1.0",
+      "author": {
+        "@type": "Person",
+        "name": "Creator of DockDoor"
+      }
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -307,28 +353,28 @@
     
     <section class="hero">
         <div class="container">
-            <img src="src/icon.png" alt="CharmBar App Icon" class="app-icon">
-            <h1 class="title">Give your Dock a bit of personality</h1>
-            <p class="subtitle">Decorate app icons with emojis, PNGs, or JPGs that appear like magic when apps show up in your dock.</p>
+            <img src="src/icon.png" alt="CharmBar Mac Dock Customization App Icon" class="app-icon">
+            <h1 class="title">Give your Mac Dock a bit of personality</h1>
+            <p class="subtitle">Add emojis, PNGs, or JPGs to your favorite macOS dock apps. Personalize your Mac experience with custom dock icons.</p>
             <div class="hero-cta">
-                <a href="https://keplercafe.gumroad.com/l/lfhpu" class="cta-button">Download Now</a>
-                <span class="price">$5 one-time payment</span>
+                <a href="https://keplercafe.gumroad.com/l/lfhpu" class="cta-button">Download CharmBar</a>
+                <span class="price">$5 one-time payment, no subscriptions</span>
             </div>
         </div>
     </section>
     
     <section class="design-highlight">
         <div class="container">
-            <h2 class="section-title">Beautiful Dock Customization</h2>
+            <h2 class="section-title">Beautiful Mac Dock Customization</h2>
             <div class="design-showcase">
-                <img src="src/example_img.png" alt="Dock overlay design" class="design-img">
+                <img src="src/example_img.png" alt="CharmBar Mac Dock Icon Customization Example" class="design-img">
             </div>
         </div>
     </section>
 
     <section class="mockup-section">
         <div class="container">
-            <h2 class="section-title">See it in Action</h2>
+            <h2 class="section-title">See CharmBar in Action</h2>
             <div class="video-container">
                 <video autoplay muted loop playsinline class="mockup-video">
                     <source src="src/example.mp4" type="video/mp4">
@@ -338,66 +384,66 @@
         </div>
     </section>
     
-    <section class="features">
+    <section class="features" id="features">
         <div class="container">
-            <h2 class="section-title">Features</h2>
+            <h2 class="section-title">Mac Dock Customization Features</h2>
             <div class="feature-grid">
                 <div class="feature-card">
                     <div class="feature-icon">🎨</div>
-                    <h3 class="feature-title">Custom Dock Charms</h3>
-                    <p>Add any emoji, PNG, or JPG to your favorite apps in the Dock.</p>
+                    <h3 class="feature-title">Custom Dock Icons</h3>
+                    <p>Add any emoji, PNG, or JPG to customize app icons in your macOS dock.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">⚡️</div>
-                    <h3 class="feature-title">Real-time Rendering</h3>
-                    <p>Charms appear instantly when apps show up in your Dock.</p>
+                    <h3 class="feature-title">Real-time Icon Updates</h3>
+                    <p>Custom icons appear instantly when apps show up in your Mac dock.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">🔒</div>
                     <h3 class="feature-title">Privacy Focused</h3>
-                    <p>Zero tracking, zero analytics, zero data collection — your activity stays on your Mac, period.</p>               
+                    <p>Zero tracking, zero analytics, zero data collection — your Mac activity stays private.</p>               
                  </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">💯</div>
-                    <h3 class="feature-title">Native Experience</h3>
-                    <p>Designed specifically for macOS for seamless integration.</p>
+                    <h3 class="feature-title">Native macOS Experience</h3>
+                    <p>Designed specifically for Mac users for seamless dock integration.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">🚀</div>
-                    <h3 class="feature-title">Lightweight</h3>
-                    <p>Minimal resource usage to keep your Mac fast and responsive.</p>
+                    <h3 class="feature-title">Lightweight App</h3>
+                    <p>Minimal resource usage to keep your Mac fast while customizing your dock.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">💰</div>
                     <h3 class="feature-title">One-time Payment</h3>
-                    <p>Single lifetime purchase with no subscriptions ever.</p>
+                    <p>Single lifetime purchase with no subscriptions for your Mac dock customization.</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">💻</div>
-                    <h3 class="feature-title">Multi-Device License</h3>
-                    <p>Use on up to 3 devices with a single purchase.</p>
+                    <h3 class="feature-title">Multi-Mac License</h3>
+                    <p>Use on up to 3 Mac devices with a single purchase.</p>
                 </div>
             </div>
         </div>
     </section>
     
-    <section class="pricing">
+    <section class="pricing" id="pricing">
         <div class="container">
-            <h2 class="section-title">Simple Pricing</h2>
+            <h2 class="section-title">Simple CharmBar Pricing</h2>
             <div class="price-card">
                 <p class="price-tag">$5</p>
-                <p class="price-description">One-time payment. Lifetime access.</p>
+                <p class="price-description">One-time payment. Lifetime access to Mac dock customization.</p>
                 <div class="price-features">
                     <div class="price-feature">No subscriptions ever</div>
                     <div class="price-feature">No ads or tracking</div>
                     <div class="price-feature">Free updates</div>
-                    <div class="price-feature">macOS native experience</div>
+                    <div class="price-feature">macOS native dock experience</div>
                 </div>
                 <a href="https://keplercafe.gumroad.com/l/lfhpu" class="cta-button">Get CharmBar Now</a>
             </div>
@@ -406,8 +452,12 @@
     
     <footer>
         <div class="container">
-            <p class="footer-text">CharmBar — The most advanced dock customization app for macOS</p>
-            <p class="creator-info">From the creator of DockDoor for Mac</p>
+            <p class="footer-text">CharmBar — The most advanced Mac dock customization app</p>
+            <p class="creator-info">From the creator of <a href="https://dockdoor.net">DockDoor for Mac</a></p>
+            <div class="footer-links">
+                <a href="https://github.com/ejbills" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://dockdoor.net" target="_blank" rel="noopener noreferrer">DockDoor</a>
+            </div>
         </div>
     </footer>
 </body>

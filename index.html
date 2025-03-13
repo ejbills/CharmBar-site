@@ -203,6 +203,13 @@
             background: linear-gradient(180deg, var(--background-primary) 0%, var(--background-secondary) 100%);
         }
         
+        .video-section {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
         .video-container {
             max-width: 800px;
             width: 100%;
@@ -375,11 +382,19 @@
     <section class="mockup-section">
         <div class="container">
             <h2 class="section-title">See CharmBar in Action</h2>
-            <div class="video-container">
-                <video autoplay muted loop playsinline class="mockup-video">
-                    <source src="src/example.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+            <div class="video-section">
+                <div class="video-container">
+                    <video autoplay muted loop playsinline class="mockup-video">
+                        <source src="src/example_1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-container">
+                    <video autoplay muted loop playsinline class="mockup-video">
+                        <source src="src/example.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
         </div>
     </section>

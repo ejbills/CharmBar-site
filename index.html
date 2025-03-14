@@ -326,6 +326,91 @@
                 padding: 32px;
             }
         }
+
+        .featured-designs {
+        padding: 100px 0;
+        background-color: var(--background-primary);
+    }
+    
+    .featured-subtitle {
+        text-align: center;
+        font-size: 20px;
+        color: var(--text-secondary);
+        margin-bottom: 48px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .designs-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+        justify-content: center;
+    }
+    
+    .design-card {
+        background-color: var(--background-secondary);
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    .design-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    }
+    
+    .design-image-container {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .design-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease;
+    }
+    
+    .design-card:hover .design-image {
+        transform: scale(1.03);
+    }
+    
+    .design-info {
+        padding: 16px 20px;
+    }
+    
+    .design-credit {
+        font-size: 15px;
+        color: var(--text-secondary);
+        text-align: center;
+    }
+    
+    /* Media Queries for mobile responsiveness */
+    @media (max-width: 768px) {
+        .featured-designs {
+            padding: 60px 0;
+        }
+        
+        .designs-grid {
+            grid-template-columns: 1fr;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .featured-subtitle {
+            font-size: 18px;
+            margin-bottom: 32px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .design-card {
+            max-width: 100%;
+        }
+    }
     </style>
     <!-- Schema.org markup for Google -->
     <script type="application/ld+json">
@@ -398,6 +483,25 @@
                         Your browser does not support the video tag.
                     </video>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-designs" id="featured-designs">
+        <div class="container">
+            <h2 class="section-title">Featured Designs</h2>
+            <p class="featured-subtitle">See how our users personalize their Mac docks</p>
+            
+            <div class="designs-grid">
+                <div class="design-card">
+                    <div class="design-image-container">
+                        <img src="src/users/user_example_1.png" alt="CharmBar design by Padehat" class="design-image">
+                    </div>
+                    <div class="design-info">
+                        <p class="design-credit">Design by <strong>Padehat</strong></p>
+                    </div>
+                </div>
+                <!-- More design cards -->
             </div>
         </div>
     </section>
